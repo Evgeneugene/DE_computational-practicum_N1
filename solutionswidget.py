@@ -15,6 +15,7 @@ class SolutionsWidget(QWidget):
         vertical_layout = QVBoxLayout()
         vertical_layout.addWidget(self.canvas)
 
-        self.canvas.axe_1 = self.canvas.figure.add_subplot(121)
-        self.canvas.axe_2 = self.canvas.figure.add_subplot(122)
+        self.canvas.axe_1 = self.canvas.figure.add_subplot(2, 2, 1)
+        self.canvas.axe_2 = self.canvas.figure.add_subplot(2, 2, 2)
+        self.canvas.axe_3 = self.canvas.figure.add_subplot(2, 1, 2)
         self.setLayout(vertical_layout)
