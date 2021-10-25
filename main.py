@@ -104,9 +104,9 @@ class MatplotlibWidget(QMainWindow):
                                                                         color=_eulerColor,
                                                                         label="Euler",
                                                                         markersize=4)
-        self.SolutionsWidget.canvas.axe_1.legend(loc='upper right')
+        self.SolutionsWidget.canvas.axe_1.legend(loc='upper left')
         self.SolutionsWidget.canvas.axe_1.set_title('Solutions')
-        self.SolutionsWidget.canvas.axe_2.legend(loc='upper right')
+        self.SolutionsWidget.canvas.axe_2.legend(loc='upper left')
         self.SolutionsWidget.canvas.axe_2.set_title('LTEs')
         self.update_global_error()
         self.show_euler()
@@ -120,7 +120,7 @@ class MatplotlibWidget(QMainWindow):
         xi = self.grid.xi
         xf = self.grid.xf
         yi = self.grid.yi
-        x_plot, y_euler_err = [], []
+        x_plot_global_error, y_euler_global_error = [], []
         for i in range(n0, N+1):
             h = float(((xf - xi) / i))
             y = yi
@@ -131,18 +131,22 @@ class MatplotlibWidget(QMainWindow):
                 x = x + h
                 func = f(x)
                 max_y_euler_error = max(abs(func - y), max_y_euler_error)
-            y_euler_err.append(max_y_euler_error)
-            x_plot.append(i)
-        print("ERR:", y_euler_err)
-        print("N:", x_plot)
+            y_euler_global_error.append(max_y_euler_error)
+            x_plot_global_error.append(i)
+        print("ERR:", y_euler_global_error)
+        print("N:", x_plot_global_error)
         self.SolutionsWidget.canvas.axe_3.clear()
-        self.euler_line_global_error, = self.SolutionsWidget.canvas.axe_3.plot(x_plot, y_euler_err, ".",
+        self.euler_line_global_error, = self.SolutionsWidget.canvas.axe_3.plot(x_plot_global_error, y_euler_global_error,
+                                                                               ".",
                                                                                color=_eulerColor,
                                                                                label="Euler",
                                                                                markersize=4)
-        self.SolutionsWidget.canvas.axe_3.legend(loc='upper right')
+        self.SolutionsWidget.canvas.axe_3.legend(loc='upper left')
         self.SolutionsWidget.canvas.axe_3.set_title('GTEs')
+        self.euler_line_global_error.set_visible(self.checkBox_2.isChecked())
         self.SolutionsWidget.canvas.draw()
+
+
 app = QApplication([])
 window = MatplotlibWidget()
 window.show()
