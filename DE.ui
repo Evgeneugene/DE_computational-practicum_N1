@@ -105,7 +105,7 @@ QScrollBar:horizontal{
             <item row="0" column="1">
              <widget class="QLineEdit" name="lineEdit">
               <property name="text">
-               <string>0</string>
+               <string>1</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignCenter</set>
@@ -122,7 +122,7 @@ QScrollBar:horizontal{
             <item row="1" column="1">
              <widget class="QLineEdit" name="lineEdit_2">
               <property name="text">
-               <string>1</string>
+               <string>-2</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignCenter</set>
@@ -142,7 +142,7 @@ QScrollBar:horizontal{
             <item row="2" column="1">
              <widget class="QLineEdit" name="lineEdit_3">
               <property name="text">
-               <string>1</string>
+               <string>7</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignCenter</set>
@@ -152,7 +152,7 @@ QScrollBar:horizontal{
             <item row="3" column="0">
              <widget class="QLabel" name="label_4">
               <property name="text">
-               <string>N:</string>
+               <string>h</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignCenter</set>
@@ -162,7 +162,7 @@ QScrollBar:horizontal{
             <item row="3" column="1">
              <widget class="QLineEdit" name="lineEdit_4">
               <property name="text">
-               <string>10</string>
+               <string>1</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignCenter</set>
@@ -210,7 +210,7 @@ QScrollBar:horizontal{
             </rect>
            </property>
            <property name="text">
-            <string>   Show Euler Method solution</string>
+            <string>   Euler Method</string>
            </property>
           </widget>
           <widget class="QCheckBox" name="checkBox">
@@ -226,7 +226,7 @@ QScrollBar:horizontal{
             </rect>
            </property>
            <property name="text">
-            <string>   Show analytical solution</string>
+            <string>   Exact solution</string>
            </property>
            <property name="checked">
             <bool>false</bool>
@@ -314,6 +314,29 @@ QScrollBar:horizontal{
              </widget>
             </item>
            </layout>
+          </widget>
+          <widget class="QWidget" name="widget" native="true">
+           <property name="geometry">
+            <rect>
+             <x>110</x>
+             <y>520</y>
+             <width>120</width>
+             <height>80</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QCheckBox" name="checkBox_3">
+           <property name="geometry">
+            <rect>
+             <x>160</x>
+             <y>490</y>
+             <width>231</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>   Improved Euler Method</string>
+           </property>
           </widget>
          </widget>
         </item>
