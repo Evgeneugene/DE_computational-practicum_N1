@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1536</width>
-    <height>821</height>
+    <width>1593</width>
+    <height>817</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -30,12 +30,7 @@
        </size>
       </property>
       <property name="styleSheet">
-       <string notr="true">QScrollBar:vertical{
-	background-color:black;
-}
-QScrollBar:horizontal{
-	background-color:black;
-}</string>
+       <string notr="true"/>
       </property>
       <property name="widgetResizable">
        <bool>true</bool>
@@ -45,8 +40,8 @@ QScrollBar:horizontal{
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>1510</width>
-         <height>1124</height>
+         <width>1567</width>
+         <height>1374</height>
         </rect>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -54,8 +49,8 @@ QScrollBar:horizontal{
          <widget class="QFrame" name="frame">
           <property name="minimumSize">
            <size>
-            <width>1000</width>
-            <height>1100</height>
+            <width>1500</width>
+            <height>1350</height>
            </size>
           </property>
           <property name="frameShape">
@@ -67,8 +62,8 @@ QScrollBar:horizontal{
           <widget class="QWidget" name="layoutWidget">
            <property name="geometry">
             <rect>
-             <x>150</x>
-             <y>170</y>
+             <x>110</x>
+             <y>110</y>
              <width>213</width>
              <height>138</height>
             </rect>
@@ -187,30 +182,30 @@ QScrollBar:horizontal{
           <widget class="SolutionsWidget" name="SolutionsWidget" native="true">
            <property name="geometry">
             <rect>
-             <x>520</x>
-             <y>30</y>
-             <width>881</width>
-             <height>1021</height>
+             <x>400</x>
+             <y>-70</y>
+             <width>971</width>
+             <height>900</height>
             </rect>
            </property>
            <property name="minimumSize">
             <size>
-             <width>100</width>
-             <height>10</height>
+             <width>600</width>
+             <height>100</height>
             </size>
            </property>
           </widget>
           <widget class="QCheckBox" name="checkBox_2">
            <property name="geometry">
             <rect>
-             <x>160</x>
-             <y>460</y>
+             <x>130</x>
+             <y>340</y>
              <width>221</width>
              <height>20</height>
             </rect>
            </property>
            <property name="text">
-            <string>   Euler Method</string>
+            <string>Euler Method</string>
            </property>
           </widget>
           <widget class="QCheckBox" name="checkBox">
@@ -219,14 +214,14 @@ QScrollBar:horizontal{
            </property>
            <property name="geometry">
             <rect>
-             <x>160</x>
-             <y>430</y>
+             <x>130</x>
+             <y>310</y>
              <width>211</width>
              <height>20</height>
             </rect>
            </property>
            <property name="text">
-            <string>   Exact solution</string>
+            <string>Exact solution</string>
            </property>
            <property name="checked">
             <bool>false</bool>
@@ -238,8 +233,8 @@ QScrollBar:horizontal{
           <widget class="QWidget" name="layoutWidget_2">
            <property name="geometry">
             <rect>
-             <x>150</x>
-             <y>710</y>
+             <x>110</x>
+             <y>520</y>
              <width>211</width>
              <height>80</height>
             </rect>
@@ -315,27 +310,30 @@ QScrollBar:horizontal{
             </item>
            </layout>
           </widget>
-          <widget class="QWidget" name="widget" native="true">
-           <property name="geometry">
-            <rect>
-             <x>110</x>
-             <y>520</y>
-             <width>120</width>
-             <height>80</height>
-            </rect>
-           </property>
-          </widget>
           <widget class="QCheckBox" name="checkBox_3">
            <property name="geometry">
             <rect>
-             <x>160</x>
-             <y>490</y>
+             <x>130</x>
+             <y>370</y>
              <width>231</width>
              <height>20</height>
             </rect>
            </property>
            <property name="text">
-            <string>   Improved Euler Method</string>
+            <string>Improved Euler Method</string>
+           </property>
+          </widget>
+          <widget class="QCheckBox" name="checkBox_4">
+           <property name="geometry">
+            <rect>
+             <x>130</x>
+             <y>400</y>
+             <width>181</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Runge-Kutta Method</string>
            </property>
           </widget>
          </widget>
@@ -351,7 +349,7 @@ QScrollBar:horizontal{
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1536</width>
+     <width>1593</width>
      <height>22</height>
     </rect>
    </property>
